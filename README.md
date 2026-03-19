@@ -6,6 +6,14 @@ Playdrop helps creators level up their vibe coded games with publishing, hosting
 
 Learn more at [playdrop.ai](https://www.playdrop.ai/).
 
+## Install
+
+Install the `playdrop` skill from this repo with:
+
+```bash
+npx skills add https://github.com/playdrop-ai/playdrop-skills --skill playdrop
+```
+
 ## What Playdrop provides
 
 - Hosting with shareable game listings and social features such as follow, like, save, and comments
