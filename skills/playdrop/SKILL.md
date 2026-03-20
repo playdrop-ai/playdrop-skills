@@ -50,12 +50,22 @@ Use this skill to improve, publish, and manage your web game, app, or asset.
 - Prefer remix when a public starter or demo is already close to the requested project.
 - See `references/create-and-remix.md`
 
+## Porting shortcut
+
+- Godot or engine port : inspect `playdrop/app/starter-kit-racing` and `playdrop/app/starter-kit-3d-platformer` early.
+- Use them as the default references for source freezing, scene conversion, debug hooks, hosted validation, and mobile parity unless there is a better fit.
+- If you choose not to use them, say why.
+- See `references/godot-porting.md`
+
 ## Genre shortcut
 
 - Racing, kart, or vehicle game : inspect `playdrop/app/starter-kit-racing` early.
 - Use it as the default reference for art, controls, physics, camera, HUD, and mobile controls unless there is a better fit.
+- 3D platformer or third-person character controller game : inspect `playdrop/app/starter-kit-3d-platformer` early.
+- Use it as the default reference for movement, orbit camera, jump and landing behavior, collectibles, falling platforms, debug hooks, and mobile controls unless there is a better fit.
 - If you choose not to use it, say why.
 - See `references/racing.md`
+- See `references/platformer-3d.md`
 
 ## Services
 
