@@ -101,5 +101,6 @@ Use this skill to improve, publish, and manage your web game, app, or asset.
 - Prefer public docs and stable CLI commands over undocumented workflows.
 - If docs browsing fails, continue with `playdrop help`, `playdrop getting-started`, `playdrop browse`, and `playdrop detail`.
 - Do not rely on unpublished docs, local repo paths, or non-public workflows.
+- For browser-based login or approval flows, wait for the CLI command to exit and verify success with `playdrop auth whoami` before responding.
 - Use `playdrop project capture` or `playdrop project capture remote` when a screenshot, runtime log, or browser proof is needed.
 - Keep guidance focused on public creator and developer workflows.
