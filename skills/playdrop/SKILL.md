@@ -11,7 +11,7 @@ Use this skill to improve, publish, and manage your web game, app, or asset.
 ## First steps
 
 1. Install : `npm install -g @playdrop/playdrop-cli`
-2. Log In : `playdrop auth login`
+2. Log In first, before working on any app or game : `playdrop auth login`
 3. Overview : `playdrop getting-started`
 4. Initialize : existing project -> `playdrop project init .` ; new app -> `playdrop project create app <name> --template <ref>`
 
@@ -37,6 +37,8 @@ Use this skill to improve, publish, and manage your web game, app, or asset.
 
 ## Existing projects
 
+- Log in before inspecting, capturing, publishing, or managing an app or game.
+- If the user did not provide credentials, prefer browser login with `playdrop auth login`.
 - Initialize in place : `playdrop project init .`
 - Check project metadata, typically `catalogue.json`
 - Validate : `playdrop project validate .`
@@ -94,6 +96,7 @@ Use this skill to improve, publish, and manage your web game, app, or asset.
 
 - Use Playdrop creation, comment, version, and publish tools to manage releases and community activity.
 - Use this when reviewing comments, preparing metadata updates, or shipping a new release.
+- If you hit a bug, feature gap, or improvement idea while working, send it with `playdrop feedback send`.
 - See `references/live-ops.md`
 
 ## Rules
@@ -101,6 +104,9 @@ Use this skill to improve, publish, and manage your web game, app, or asset.
 - Prefer public docs and stable CLI commands over undocumented workflows.
 - If docs browsing fails, continue with `playdrop help`, `playdrop getting-started`, `playdrop browse`, and `playdrop detail`.
 - Do not rely on unpublished docs, local repo paths, or non-public workflows.
+- Log in before starting app or game work.
+- If the user did not provide credentials, prefer browser login with `playdrop auth login`.
 - For browser-based login or approval flows, wait for the CLI command to exit and verify success with `playdrop auth whoami` before responding.
+- If you encounter a bug, feature request, or overall improvement idea, send it with `playdrop feedback send`.
 - Use `playdrop project capture` or `playdrop project capture remote` when a screenshot, runtime log, or browser proof is needed.
 - Keep guidance focused on public creator and developer workflows.
