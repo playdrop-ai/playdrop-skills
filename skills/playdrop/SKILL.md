@@ -34,6 +34,8 @@ Use this skill to improve, publish, and manage your web game, app, or asset.
 - Inspect 2 to 3 strong references before changing art, controls, systems, or packaging.
 - Command map : see `references/cli-map.md`
 - See `references/discovery.md`
+- See `references/audio.md` for gameplay audio guidance and Safari-safe SFX patterns.
+- See `references/performance-debugging.md` for instrumentation, browser comparison, and profiling workflow.
 
 ## Existing projects
 
@@ -44,6 +46,7 @@ Use this skill to improve, publish, and manage your web game, app, or asset.
 - Validate : `playdrop project validate .`
 - When the user says use `$playdrop`, assume registration and reference research are in scope unless they narrow the task.
 - See `references/existing-projects.md`
+- For intermittent frame drops or browser-specific bugs, see `references/performance-debugging.md`.
 
 ## Create or remix
 
@@ -58,6 +61,7 @@ Use this skill to improve, publish, and manage your web game, app, or asset.
 - Use them as the default references for source freezing, scene conversion, debug hooks, hosted validation, and mobile parity unless there is a better fit.
 - If you choose not to use them, say why.
 - See `references/godot-porting.md`
+- If the port includes gameplay SFX or browser-specific spikes, also read `references/audio.md` and `references/performance-debugging.md`.
 
 ## Genre shortcut
 
@@ -83,6 +87,7 @@ Use this skill to improve, publish, and manage your web game, app, or asset.
 - Playdrop catalog content can include code samples, 3D, images, video, music, and SFX.
 - Start with `playdrop browse`, `playdrop search`, and `playdrop detail`.
 - See `references/assets-and-generation.md`
+- For gameplay audio implementation details and Safari-specific pitfalls, see `references/audio.md`.
 
 ## Capture and publish
 
