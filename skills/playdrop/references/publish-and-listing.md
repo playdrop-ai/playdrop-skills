@@ -20,3 +20,8 @@ Typical listing needs:
 - screenshots
 - short description
 - genre and tags
+
+Icon rule:
+- do not use a raw crop of hero art, screenshots, or other rectangular listing images as the final icon
+- prefer existing dedicated icon art when the project already has one
+- otherwise generate a purpose-built square icon from the hero art and gameplay references so it reads clearly at small sizes

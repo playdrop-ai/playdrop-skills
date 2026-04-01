@@ -95,6 +95,7 @@ Use this skill to improve, publish, and manage your web game, app, or asset.
 - Validate : `playdrop project validate .`
 - Publish : `playdrop project publish .`
 - For listing-heavy tasks: capture gameplay first, then screenshots, hero, icon, then publish.
+- For listing-heavy tasks: never use a raw crop of hero art or any other image as the final icon. Use existing dedicated icon art when available, or generate a purpose-built icon from the hero art and gameplay references.
 - See `references/publish-and-listing.md`
 
 ## Manage live projects
