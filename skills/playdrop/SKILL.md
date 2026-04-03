@@ -1,118 +1,81 @@
 ---
 name: playdrop
-description: "Use this skill for Playdrop, an AI gaming platform and public CLI/SDK for improving, publishing, and managing web games, apps, and assets. Use it when you want shareable distribution, better visuals or audio from catalog or AI-generated assets, code references from published demos, or online services such as identity, saves, multiplayer, and monetization."
+description: "Compatibility Playdrop skill for public creator workflows. Use this when working from the legacy playdrop-skills repo or skills.sh distribution and you need a broad public Playdrop workflow across planning, improvement, publishing, services, references, and ongoing project management."
 ---
 
 # Playdrop
 
-Playdrop is an AI gaming platform that helps level up vibe-coded web games.
-Use this skill to improve, publish, and manage your web game, app, or asset.
+This is the legacy compatibility skill package generated from the canonical `playdrop-plugin` repo.
+
+- Canonical source: `https://github.com/playdrop-ai/playdrop-plugin`
+- Legacy compatibility surface: `https://github.com/playdrop-ai/playdrop-skills`
+- Synced platform version: `0.5.5`
+
+Use this skill when you only have the umbrella `playdrop` skill installed from the legacy skills repo and need the broad public Playdrop workflow.
 
 ## First steps
 
-1. Install : `npm install -g @playdrop/playdrop-cli`
-2. Log In first, before working on any app or game : `playdrop auth login`
-3. Overview : `playdrop getting-started`
-4. Initialize : existing project -> `playdrop project init .` ; new app -> `playdrop project create app <name> --template <ref>`
+1. Install the CLI: `npm install -g @playdrop/playdrop-cli`
+2. Log in: `playdrop auth login`
+3. Initialize: existing project -> `playdrop project init .` ; new project -> `playdrop project create app <name> --template <ref>`
+4. Validate: `playdrop project validate .`
 
 ## Use this skill when
 
-- want to make a game prettier with Playdrop catalog assets or AI generation for images, video, 3D, music, and SFX
-- want to add identity such as usernames and avatars, or persistence such as game saves
-- want to reuse code references from published Playdrop games or demos to build features faster and with less risk
-- want to make a game realtime multiplayer
-- want to publish a game on the playdrop platform so that people can find it and play it
-- want to add monetization with IAP to a game
-- want to manage an existing game by reviewing comments, release history, listing updates, and new releases
+- you need to plan a new Playdrop game
+- you need to cut scope before implementation
+- you need gameplay mockups or a candid gameplay review
+- you want to inspect references, assets, or starter kits
+- you need help improving an existing game before publish
+- you need store listing guidance
+- you want to integrate services like auth, saves, realtime, monetization, or AI assets
+- you need the legacy broad Playdrop workflow rather than a more specific skill
 
-## Explore references
+## Recommended specialist skills
 
-- Browse : `playdrop browse ...`
-- Search : `playdrop search <query>`
-- Inspect : `playdrop detail <ref> --json`
-- Docs : `playdrop documentation browse` and `playdrop documentation read <path>`
-- Inspect 2 to 3 strong references before changing art, controls, systems, or packaging.
-- Command map : see `references/cli-map.md`
-- See `references/discovery.md`
-- See `references/audio.md` for gameplay audio guidance and Safari-safe SFX patterns.
-- See `references/performance-debugging.md` for instrumentation, browser comparison, and profiling workflow.
+If the environment supports installing more specific skills from the same legacy repo, prefer:
 
-## Existing projects
+- `game-planning`
+- `scope-control`
+- `gameplay-mockups`
+- `asset-discovery`
+- `project-updates`
+- `dev-testing`
+- `game-improvement`
+- `gameplay-review`
+- `store-listing`
+- `comment-monitoring`
+- `game-marketing`
+- `service-integration`
+- `engine-porting`
+- `creator-support`
 
-- Log in before inspecting, capturing, publishing, or managing an app or game.
-- If the user did not provide credentials, prefer browser login with `playdrop auth login`.
-- Initialize in place : `playdrop project init .`
-- Check project metadata, typically `catalogue.json`
-- Validate : `playdrop project validate .`
-- When the user says use `$playdrop`, assume registration and reference research are in scope unless they narrow the task.
-- See `references/existing-projects.md`
-- For intermittent frame drops or browser-specific bugs, see `references/performance-debugging.md`.
+## Shared references
 
-## Create or remix
+Use the local `references/` files in this legacy package when you need more detail:
 
-- New app : `playdrop browse --kind app --app-type template --json` then `playdrop project create app <name> --template <ref>`
-- Remix : `playdrop project create app <name> --remix <ref>`
-- Prefer remix when a public starter or demo is already close to the requested project.
-- See `references/create-and-remix.md`
-
-## Porting shortcut
-
-- Godot or engine port : inspect `playdrop/app/starter-kit-racing`, `playdrop/app/starter-kit-3d-platformer`, and `playdrop/app/starter-kit-fps` early.
-- Use them as the default references for source freezing, scene conversion, debug hooks, hosted validation, and mobile parity unless there is a better fit.
-- If you choose not to use them, say why.
-- See `references/godot-porting.md`
-- If the port includes gameplay SFX or browser-specific spikes, also read `references/audio.md` and `references/performance-debugging.md`.
-
-## Genre shortcut
-
-- Racing, kart, or vehicle game : inspect `playdrop/app/starter-kit-racing` early.
-- Use it as the default reference for art, controls, physics, camera, HUD, and mobile controls unless there is a better fit.
-- 3D platformer or third-person character controller game : inspect `playdrop/app/starter-kit-3d-platformer` early.
-- Use it as the default reference for movement, orbit camera, jump and landing behavior, collectibles, falling platforms, debug hooks, and mobile controls unless there is a better fit.
-- First-person shooter or first-person action game : inspect `playdrop/app/starter-kit-fps` early.
-- Use it as the default reference for pointer-lock input, viewmodel camera setup, hitscan combat, enemy combat loops, HUD, hosted validation, and landscape-only mobile touch controls unless there is a better fit.
-- If you choose not to use it, say why.
-- See `references/racing.md`
-- See `references/platformer-3d.md`
-- See `references/fps.md`
-
-## Services
-
-- Playdrop services include identity, avatars, saves, realtime multiplayer, monetization, and AI generation.
-- Read public docs first, then integrate only what helps the project.
-- See `references/services.md`
-
-## Assets
-
-- Playdrop catalog content can include code samples, 3D, images, video, music, and SFX.
-- Start with `playdrop browse`, `playdrop search`, and `playdrop detail`.
-- See `references/assets-and-generation.md`
-- For gameplay audio implementation details and Safari-specific pitfalls, see `references/audio.md`.
-
-## Capture and publish
-
-- Capture proof : `playdrop project capture` or `playdrop project capture remote`
-- Validate : `playdrop project validate .`
-- Publish : `playdrop project publish .`
-- For listing-heavy tasks: capture gameplay first, then screenshots, hero, icon, then publish.
-- For listing-heavy tasks: never use a raw crop of hero art or any other image as the final icon. Use existing dedicated icon art when available, or generate a purpose-built icon from the hero art and gameplay references.
-- See `references/publish-and-listing.md`
-
-## Manage live projects
-
-- Use Playdrop creation, comment, version, and publish tools to manage releases and community activity.
-- Use this when reviewing comments, preparing metadata updates, or shipping a new release.
-- If you hit a bug, feature gap, or improvement idea while working, send it with `playdrop feedback send`.
-- See `references/live-ops.md`
+- `cli-map.md`
+- `discovery.md`
+- `pitch-and-validation.md`
+- `scope-cutting.md`
+- `gameplay-mockups.md`
+- `gameplay-review.md`
+- `existing-projects.md`
+- `create-and-remix.md`
+- `godot-porting.md`
+- `racing.md`
+- `platformer-3d.md`
+- `fps.md`
+- `services.md`
+- `assets-and-generation.md`
+- `audio.md`
+- `publish-and-listing.md`
+- `live-ops.md`
+- `performance-debugging.md`
 
 ## Rules
 
-- Prefer public docs and stable CLI commands over undocumented workflows.
-- If docs browsing fails, continue with `playdrop help`, `playdrop getting-started`, `playdrop browse`, and `playdrop detail`.
-- Do not rely on unpublished docs, local repo paths, or non-public workflows.
-- Log in before starting app or game work.
-- If the user did not provide credentials, prefer browser login with `playdrop auth login`.
-- For browser-based login or approval flows, wait for the CLI command to exit and verify success with `playdrop auth whoami` before responding.
-- If you encounter a bug, feature request, or overall improvement idea, send it with `playdrop feedback send`.
-- Use `playdrop project capture` or `playdrop project capture remote` when a screenshot, runtime log, or browser proof is needed.
-- Keep guidance focused on public creator and developer workflows.
+- prefer public Playdrop docs and stable CLI commands
+- use `playdrop documentation browse` and `playdrop documentation read <path>` when you need the latest product guidance
+- keep guidance focused on public creator workflows
+- if a more specific generated skill is installed, hand off to it rather than keeping everything in this umbrella flow

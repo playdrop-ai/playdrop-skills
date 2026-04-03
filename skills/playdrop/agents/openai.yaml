@@ -1,7 +1,0 @@
-interface:
-  display_name: "Playdrop"
-  short_description: "Platform, assets, and services for web games"
-  icon_small: "./assets/playdrop-icon-small.svg"
-  icon_large: "./assets/playdrop-icon-large.png"
-  brand_color: "#BA32F4"
-  default_prompt: "Use $playdrop to improve, publish, or manage this game by exploring references, assets, services, and the right Playdrop workflow for the task."
