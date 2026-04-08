@@ -6,9 +6,19 @@ Playdrop helps creators level up their vibe coded games with publishing, hosting
 
 Learn more at [playdrop.ai](https://www.playdrop.ai/).
 
+## Preferred public setup
+
+Use the public Playdrop plugin for the best results.
+
+- Plugin docs: [playdrop.ai/docs/plugin](https://www.playdrop.ai/docs/plugin)
+- Canonical public plugin repo: [playdrop-plugin](https://github.com/playdrop-ai/playdrop-plugin)
+- Supported plugin environments: Codex, Claude Code, and Cursor
+
+This `playdrop-skills` repo is still supported, but only as a legacy compatibility and skills.sh surface.
+
 ## Source of truth
 
-This repo is sync-only.
+This repo is sync-only and legacy-first.
 
 - Canonical public source: [playdrop-plugin](https://github.com/playdrop-ai/playdrop-plugin)
 - Generated compatibility and skills.sh surface: `playdrop-skills`
@@ -17,7 +27,11 @@ Do not make manual first edits here. Regenerate this repo from the private Playd
 
 ## Install
 
-Legacy compatibility install:
+Preferred public setup:
+
+- Install the Playdrop plugin from [playdrop-plugin](https://github.com/playdrop-ai/playdrop-plugin) using your AI tool's plugin install flow
+
+Legacy compatibility install if you still need the old skill model:
 
 ```bash
 npx skills add https://github.com/playdrop-ai/playdrop-skills --skill playdrop

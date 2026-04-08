@@ -1,6 +1,6 @@
 ---
 name: playdrop
-description: "Compatibility Playdrop skill for public creator workflows. Use this when working from the legacy playdrop-skills repo or skills.sh distribution and you need a broad public Playdrop workflow across planning, improvement, publishing, services, references, and ongoing project management."
+description: "Legacy compatibility Playdrop skill for public creator workflows. Use this when working from the legacy playdrop-skills repo or skills.sh distribution and you need the older umbrella Playdrop workflow instead of the preferred public plugin."
 ---
 
 # Playdrop
@@ -9,19 +9,23 @@ This is the legacy compatibility skill package generated from the canonical `pla
 
 - Canonical source: `https://github.com/playdrop-ai/playdrop-plugin`
 - Legacy compatibility surface: `https://github.com/playdrop-ai/playdrop-skills`
-- Synced platform version: `0.5.5`
+- Synced platform version: `0.6.2`
+- Preferred public setup: install the `playdrop-plugin` repo for Codex, Claude Code, or Cursor and use its specialist skills
 
-Use this skill when you only have the umbrella `playdrop` skill installed from the legacy skills repo and need the broad public Playdrop workflow.
+Use this skill only when you are in a legacy skill-first environment and do not have the plugin available.
 
 ## First steps
 
-1. Install the CLI: `npm install -g @playdrop/playdrop-cli`
-2. Log in: `playdrop auth login`
-3. Initialize: existing project -> `playdrop project init .` ; new project -> `playdrop project create app <name> --template <ref>`
-4. Validate: `playdrop project validate .`
+1. Preferred public setup: install the `playdrop-plugin` repo in your AI tool and start with `task-routing` if you are unsure which specialist skill to use
+2. Install the CLI: `npm install -g @playdrop/playdrop-cli`
+3. Log in: `playdrop auth login`
+4. Initialize: existing project -> `playdrop project init .` ; new project -> `playdrop project create app <name> --template <ref>`
+5. Validate: `playdrop project validate .`
 
 ## Use this skill when
 
+- your AI tool only supports the old skill install model
+- you need the legacy `skills.sh` compatibility surface
 - you need to plan a new Playdrop game
 - you need to cut scope before implementation
 - you need gameplay mockups or a candid gameplay review
@@ -33,7 +37,7 @@ Use this skill when you only have the umbrella `playdrop` skill installed from t
 
 ## Recommended specialist skills
 
-If the environment supports installing more specific skills from the same legacy repo, prefer:
+If the environment supports the plugin or more specific generated skills from the same legacy repo, prefer the focused workflow instead of keeping everything in this umbrella skill:
 
 - `game-planning`
 - `scope-control`
@@ -75,6 +79,7 @@ Use the local `references/` files in this legacy package when you need more deta
 
 ## Rules
 
+- prefer the public plugin when it is available
 - prefer public Playdrop docs and stable CLI commands
 - use `playdrop documentation browse` and `playdrop documentation read <path>` when you need the latest product guidance
 - keep guidance focused on public creator workflows
