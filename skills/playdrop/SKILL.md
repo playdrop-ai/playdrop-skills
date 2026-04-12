@@ -9,7 +9,7 @@ This is the legacy compatibility skill package generated from the canonical `pla
 
 - Canonical source: `https://github.com/playdrop-ai/playdrop-plugin`
 - Legacy compatibility surface: `https://github.com/playdrop-ai/playdrop-skills`
-- Synced platform version: `0.6.2`
+- Synced platform version: `0.7.0`
 - Preferred public setup: install the `playdrop-plugin` repo for Codex, Claude Code, or Cursor and use its specialist skills
 
 Use this skill only when you are in a legacy skill-first environment and do not have the plugin available.
